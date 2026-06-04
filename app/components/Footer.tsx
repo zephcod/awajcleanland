@@ -1,9 +1,9 @@
-import styles from '@/components/page.module.css'
-import Socials from '../components/socials/socials';
+import styles from '@/app/components/page.module.css'
+import Socials from '@/app/components/socials/socials';
 // import { SubscribeToNewsletterForm } from './forms/subscribe_to_newsletter_form';
 import Link from 'next/link';
-import { Icons } from '../components/ui/icons';
-import { siteConfig } from '../../config/site';
+import { Icons } from '@/app/components/ui/icons';
+import { siteConfig } from '@/config/site';
 
 const col1 = [
   {

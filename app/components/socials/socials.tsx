@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactNode } from 'react';
-import styles from "@/components/socials/comp.module.css";
+import styles from "@/app/components/socials/comp.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -61,7 +61,7 @@ const social_item = [
     },
   ];
 
-function SocialList({}: { children: ReactNode }) {
+function SocialList({}: {  }) {
     return (
       <div className="flex flex-row mx-auto w-full items-center px-0 md:px-12">
       {social_item.map(card=>(

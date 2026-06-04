@@ -1,6 +1,6 @@
 import React from 'react'
-import RoundButton from "@/components/button/round";
-import SingleInput from "@/components/input/singleinput";
+import RoundButton from "@/app/components/button/round";
+import SingleInput from "@/app/components/input/singleinput";
 import {BsFillChatSquareHeartFill} from 'react-icons/bs';
 
 

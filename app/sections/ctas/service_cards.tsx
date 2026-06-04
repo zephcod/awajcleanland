@@ -1,4 +1,4 @@
-import { Icons } from '@/components/UI/icons'
+import { Icons } from '@/app/components/ui/icons'
 import Link from 'next/link'
 import React from 'react'
 

@@ -1,0 +1,17 @@
+.container {
+  perspective: 1000px;
+  flex:1
+}
+.glass {
+  max-width: 400px;
+  padding: 5px;
+  border-radius: 10px;
+  backdrop-filter: saturate(130%) blur(8px) !important;
+  background-color: var(--transparent-glass) !important;
+  box-shadow: inset -6px -6px 22px var(--glow),
+              inset 1px 1px 2px var(--btn-glow2),
+                    3px 3px 8px var(--shadow);
+  /* transform:  rotateX(10deg); */
+}
+
+

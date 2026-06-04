@@ -1,5 +1,5 @@
 'use client'
-import style from '@/sections/ctas/video.module.css';
+import style from '@/app/sections/ctas/video.module.css';
 
 const MapEmbed = () => {
   return (

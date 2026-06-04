@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Image from "next/image"
 import Content from "@/public/casestudy/3k_only.webp"
-import { Icons } from '@/components/UI/icons'
+import { Icons } from '@/app/components/ui/icons'
 
 const Discount = () => {
   return (

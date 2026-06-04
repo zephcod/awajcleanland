@@ -1,7 +1,7 @@
 'use client'
 import React, { useState,useEffect } from "react";
-import style from '@/sections/ctas/video.module.css';
-import { Icons } from "@/components/UI/icons";
+import style from '@/app/sections/ctas/video.module.css';
+import { Icons } from "@/app/components/ui/icons";
 
 const embedID = "w-bYHrIDj7Q";
 

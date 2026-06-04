@@ -5,11 +5,8 @@ import { useRouter } from "next/navigation"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import type { z } from "zod"
-
-import appwriteAuthService from "@/db/appwrite_auth"
-import useAuth from "@/hooks/use_auth"
 import { loginSchema } from "@/lib/validations/auth"
-import { Button, buttonVariants } from "@/components/UI/button"
+import { Button, buttonVariants } from "@/app/components/ui/button"
 import {
   Form,
   FormControl,
@@ -17,14 +14,14 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/UI/form"
-import { Input } from "@/components/UI/input"
-import { Icons } from "@/components/UI/icons"
+} from "@/app/components/ui/form"
+import { Input } from "@/app/components/ui/input"
+import { Icons } from "@/app/components/ui/icons"
 import { toast } from "sonner"
 import { quickCampaignSchema } from "@/lib/validations/solution"
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../UI/select"
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/app/components/ui/select"
 import Link from "next/link"
-import { Textarea } from "../UI/textarea"
+import { Textarea } from "@/app/components/ui/textarea"
 import Image from "next/image"
 import HolderAstro from "@/public/character/astro-holding.png";
 
@@ -33,7 +30,7 @@ type Inputs = z.infer<typeof quickCampaignSchema>
 export function QuickCampaign() {
   const router = useRouter()
   const [isPending, startTransition] = React.useTransition()
-  const {setAuthStatus} = useAuth()
+//   const {setAuthStatus} = useAuth()
 
   // react-hook-form
   const form = useForm<Inputs>({

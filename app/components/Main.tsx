@@ -15,7 +15,7 @@ export default function Main() {
         <div className={styles.heroContainer}>
           <Hero/>
         </div>
-      {/* <Headline1/>
+      <Headline1/>
       <section id='case_sec'>
       <CasesSection/>
       </section>
@@ -29,7 +29,7 @@ export default function Main() {
       <Stats/>
       <ValueProp/>
       <CallUs/>
-      <div className="h-24"></div> */}
+      <div className="h-24"></div>
       <section id='quick' className="w-full">
       {/* <QuickCampaign/> */}
       </section>

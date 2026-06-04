@@ -1,5 +1,4 @@
 import { Icons } from '@/app/components/ui/icons'
-import React from 'react'
 import Image from "next/image"
 import Content from "@/public/casestudy/cases-icon.png"
 import Link from 'next/link'

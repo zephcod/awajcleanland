@@ -1,11 +1,10 @@
 import React from 'react'
 import Image from "next/image";
-import styles from '@/components/pricing/popular_orders.module.css';
+import styles from '@/app/components/pricing/popular_orders.module.css';
 import Meta from '@/public/social/meta.png'
 import LinkedIn from '@/public/social/linkdin.png'
 import Twitter from '@/public/social/twitter.png'
 import Telegram from '@/public/social/telegram.png'
-import SnapChat from '@/public/social/snapcat.png'
 import PhotoCamera from '@/public/casestudy/photo_camera.png'
 import PromoVideo from '@/public/casestudy/promo.webp'
 import Branding from '@/public/casestudy/branding.webp'
@@ -13,7 +12,7 @@ import Training from '@/public/casestudy/training.webp'
 import Google from '@/public/social/google.png'
 import Website from '@/public/social/website.png'
 import Link from 'next/link';
-import ExpandingArrow from '../expanding_arrow';
+import ExpandingArrow from '@/app/components/expanding_arrow';
 
 interface ArticleCardrProps {
   id: number; title:string; price:string; img:string;

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/sections/page.module.css';
+import styles from '@/app/sections/page.module.css';
 import { Icons } from '@/app/components/ui/icons';
 import ScrollLinkGhost from '@/app/components/ui/scroll_link_ghost';
 

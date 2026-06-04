@@ -8,7 +8,7 @@ import Mahi from "@/public/profile/ts2.png";
 import Rahel from "@/public/profile/ts3.png";
 import Ante from "@/public/profile/ts4.png";
 import Mo from "@/public/profile/ts5.png";
-import { Separator } from '@/components/UI/separator';
+import { Separator } from '@/app/components/ui/separator';
 
 
 interface ToolTipProps {

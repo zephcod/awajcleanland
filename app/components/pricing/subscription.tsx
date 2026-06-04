@@ -1,10 +1,10 @@
 'use client'
 import * as React from "react"
 import styles from './page.module.css'
-import Outline from '@/components/button/outline';
+import Outline from '@/app/components/button/outline';
 import { BsCheck } from 'react-icons/bs';
-import '@/components/pricing/test.css'
-import { Slider } from "@/components/UI/slider";
+import '@/app/components/pricing/test.css'
+import { Slider } from "@/app/components/ui/slider";
 import { formatPrice } from "@/app/utils/utils"
 
 

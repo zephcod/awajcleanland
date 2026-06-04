@@ -1,5 +1,5 @@
 import React from 'react'
-import Payment_Card from '@/components/cards/payment-card';
+import Payment_Card from '@/app/components/cards/payment-card';
 import Link from 'next/link';
 
 const PaymentOptions = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/sections/ctas/logoslider.module.css'
+import styles from '@/app/sections/ctas/logoslider.module.css'
 import Image from "next/image";
 import Anbessa from '@/public/logo/ethiopian_logos_anebesacham_3D-min.png'
 import Babi from '@/public/logo/ethiopian_logos_babisbistro_3D-min.png'

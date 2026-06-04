@@ -7,7 +7,7 @@ const SolLayout = ({ children }: { children: ReactNode }) => {
         <div>
         {children}
         </div>
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }
