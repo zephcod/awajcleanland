@@ -1,0 +1,271 @@
+.container {
+    @apply 
+    py-1.5 
+    px-5 
+    text-center 
+    text-sm 
+    flex 
+    items-center 
+    justify-center;
+  }
+  .button {
+    border-width: 1px;
+    border-color: var(--card1);
+    box-shadow: inset -1px -1px 1px var(--glow),
+                3px 3px 3px var(--shadow),
+                -5px -5px 5px var(--glow);
+    border-radius: 10px;
+    @apply 
+    inline-flex 
+    items-center 
+    py-1 
+    font-semibold 
+    tracking-tighter 
+    transition 
+    duration-500 
+    ease-in-out 
+    transform 
+    bg-transparent 
+    bg-gradient-to-r 
+    from-orange-300 to-orange-400 
+    px-5 
+    text-gray-900
+  }
+  .outline {
+    @apply 
+    inline-flex 
+    items-center 
+    py-1 
+    font-semibold 
+    tracking-tighter 
+    transition 
+    duration-500 
+    ease-in-out 
+    transform 
+    bg-transparent 
+    px-5 
+    rounded-lg 
+    shadow-sm
+    ring-1 
+    ring-gray-400 
+    ring-opacity-40
+  }
+
+  /* Round Button */
+
+  .round {
+    position: relative;
+    height: 4rem;
+    width: 10rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+    border-width: 1px;
+    border-color: var(--btn-border);
+    background: var(--btn-bg);
+    box-shadow: inset 2px 2px 0px var(--btn-glow),
+                inset -2px -2px 0px var(--btn-shadow);
+    border-radius: 20px;
+    outline: none;
+    color: var(--primaryColor);
+    font-weight: 300;
+    transition: .5s;
+    
+  }
+  .round:hover {
+    color: var(--accent2);
+    background: var(--btn-bg);
+    box-shadow: inset 1px 1px 1px var(--btn-glow),
+                inset -2px -2px 0px var(--btn-shadow);
+    
+  }
+  .round span{
+    position: relative;
+    margin: auto;
+    font-size: 1.2rem;
+    
+  }
+  .round::before {
+    position: absolute;
+    content: '';
+    height: 4.25rem;
+    width: 10.25rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-width: 4px;
+    border-color: var(--btn-border2);
+    background: var(--btn-bg2);
+    box-shadow: 5px 5px 15px var(--btn-shadow2),
+                -11px -11px 22px var(--btn-glow2);
+    border-radius: inherit;
+    z-index: -1;
+  }
+  .tag{
+    color: var(--accent1);
+  }
+  .tag:hover{
+    color: var(--accent2);
+  }
+
+  /* Icon Button */
+
+  .iconbtn {
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 2px;
+    border-color: var(--btn-border);
+    background: var(--btn-bg);
+    box-shadow: inset 1px 1px 0px var(--btn-glow),
+                inset -1px -1px 0px var(--btn-shadow);
+    border-radius: 50%;
+    outline: none;
+    color: var(--accent1);
+    transition: .5s;
+    
+  }
+  .iconbtn:hover {
+    color: var(--accent2);
+    background: var(--btn-bg);
+    box-shadow: inset 1px 1px 1px var(--btn-glow),
+                inset -1px -1px 0px var(--btn-shadow);
+    
+  }
+  .iconbtn span{
+    position: relative;
+    margin: auto;
+    font-size: 3rem;
+    
+  }
+  .iconbtn::before {
+    position: absolute;
+    content: '';
+    height: 3.25rem;
+    width: 3.25rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-width: 2px;
+    border-color: var(--btn-border2);
+    background: var(--btn-bg2);
+    box-shadow: 3px 3px 8px var(--btn-shadow2),
+                -5px -5px 8px var(--btn-glow2);
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+    /* In Round Button */
+
+    .in_round {
+      position: relative;
+      height: 8rem;
+      width: 12rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      padding: 16px;
+      font-size: medium;
+      border-width: 4px;
+      border-color: var(--btn-border);
+      background: var(--btn-bg);
+      box-shadow: inset 2px 2px 0px var(--btn-glow),
+                  inset -2px -2px 0px var(--btn-shadow);
+      border-radius: 20px;
+      outline: none;
+      color: var(--accent1);
+      transition: .5s;
+      
+    }
+    .in_round:hover {
+      color: var(--accent2);
+      background: var(--btn-bg);
+      box-shadow: inset 1px 1px 1px var(--btn-glow),
+                  inset -2px -2px 0px var(--btn-shadow);
+      
+    }
+    .in_round span{
+      position: relative;
+      margin: auto;
+      font-size: 2.5rem;
+      
+    }
+    .in_round::before {
+      position: absolute;
+      content: '';
+      height: 8.25rem;
+      width: 12.25rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-width: 4px;
+      border-color: var(--btn-border2);
+      background: var(--btn-bg2);
+      box-shadow: 11px 11px 22px var(--btn-shadow2),
+                  -11px -11px 22px var(--btn-glow2);
+      border-radius: inherit;
+      z-index: -1;
+    }
+
+     /* Color Button */
+
+     .color_btn {
+      position: relative;
+      height: 4rem;
+      width: 10rem;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      border-width: 1px;
+      border-color: var(--btn-border);
+      background: var(--btn-bg);
+      box-shadow: inset 2px 2px 0px var(--btn-glow),
+                  inset -2px -2px 0px var(--btn-shadow);
+      border-radius: 20px;
+      outline: none;
+      color: var(--primaryColor);
+      font-weight: 300;
+      transition: .5s;
+      
+    }
+    .color_btn:hover {
+      color: var(--accent2);
+      background: var(--btn-bg);
+      box-shadow: inset 1px 1px 1px var(--btn-glow),
+                  inset -2px -2px 0px var(--btn-shadow);
+      
+    }
+    .color_btn span{
+      position: relative;
+      margin: auto;
+      font-size: 1.2rem;
+      
+    }
+    .color_btn::before {
+      position: absolute;
+      content: '';
+      height: 4.25rem;
+      width: 10.25rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-width: 4px;
+      border-color: var(--btn-border2);
+      background: var(--btn-bg2);
+      box-shadow: 5px 5px 15px var(--btn-shadow2),
+                  -11px -11px 22px var(--btn-glow2);
+      border-radius: inherit;
+      z-index: -1;
+    }

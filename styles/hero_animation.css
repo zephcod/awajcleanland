@@ -1,0 +1,255 @@
+
+  .loop-wrapper {
+    position: sticky;
+    display: block;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    align-items: baseline;
+    border-bottom: 12px solid;
+    border-color: var(--border1);
+    margin-bottom: 0;
+  }
+  .mountain {
+    position: absolute;
+    right: -900px;
+    bottom: -20px;
+    border-radius: 20px;
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+      0 0 0 50px #e2c233,
+      60px 50px 0 70px #e2c233,
+      90px 90px 0 50px #e2c233,
+      250px 250px 0 50px #e2c233,
+      290px 320px 0 50px #e2c233,
+      320px 400px 0 50px #e2c233
+      ;
+    transform: rotate(130deg);
+    animation: mtn 60s linear infinite;
+  }
+  .hill {
+    position: absolute;
+    right: -900px;
+    bottom: -55px;
+    width: 700px;
+    border-radius: 50%;
+    height: 20px;
+    box-shadow: 
+      20px 0 0 50px #5b7251,
+      /* -190px 0 0 50px #587e5c, */
+      -140px 0 0 40px #5b7251,
+      /* 250px 0 0 50px #57815e, */
+      600px 0 0 50px #5b7251,
+      1020px 0 0 50px rgb(72, 95, 71);
+    animation: hill 16s 8s linear infinite;
+  }
+  .tree, .tree:nth-child(2), .tree:nth-child(3) {
+    position: absolute;
+    height: 100px; 
+    width: 35px;
+    bottom: 0;
+  }
+  .statue1 {
+    width: 2500px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+  .statue2 {
+    width: 2500px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+  .statue3 {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+  .statue4 {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+  .statue5 {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  .rock {
+    margin-top: -17%;
+    height: 2%; 
+    width: 2%;
+    bottom: -2px;
+    border-radius: 20px;
+    position: absolute;
+    background: #ddd;
+  }
+  .truck, .wheels {
+    transition: all ease;
+    width: 85px;
+    margin-right: -60px;
+    bottom: 0px;
+    right: 50%;
+    position: absolute;
+    background: #eee;
+  }
+  .cloud {
+    position: relative;
+    /* padding-left: 100px; */
+    /* left: 50px; */
+    /* margin-left: 500px; */
+    margin-top: -10px;
+    margin-bottom: 20px;
+    /* margin:auto; */
+    background: transparent;
+    background-size: contain;
+  }
+  .truck {
+    /* position: absolute; */
+    /* padding-left: 100px; */
+    /* left: 50px; */
+    margin-left: 500px;
+    margin:auto;
+    background: transparent;
+    background-size: contain;
+    height: 260px;
+    width: 150px;
+  }
+  .truck:before {
+    content: " ";
+    position: absolute;
+    bottom: 100px;
+    width: 25px;
+    rotate: -20deg;
+    transform: translateY(-15px);
+    box-shadow:
+      -30px 28px 0 1.5px #b6b6b6,
+       -35px 18px 0 1.5px #b6b6b6,
+       -25px 08px 0 1.5px #b6b6b6;
+  }
+  .awaj {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    padding: 10px;
+    border-radius: 20%;
+    font-size: 20px;
+    backdrop-filter: saturate(130%) blur(8px) !important;
+    background-color: var(--transparent-glass) !important;
+    box-shadow: inset -6px -6px 22px var(--glow),
+                inset 1px 1px 2px var(--btn-glow2),
+                      3px 3px 8px var(--shadow);
+    opacity: 0;
+  }
+  .tree  { animation: tree 8s 0.100s linear infinite; }
+  .tree:nth-child(2)  { animation: tree2 3s 0.150s linear infinite; }
+  .tree:nth-child(3)  { animation: tree3 9s 0.050s linear infinite; }
+
+  .statue1  { animation: statue1 80s 0s linear infinite; }
+  .statue2  { animation: statue1 80s -40s linear infinite; }
+  .statue3  { animation: statue3 30s -15s linear infinite; }
+  .statue4  { animation: statue4 30s -20s linear infinite; }
+  .statue5  { animation: statue5 30s -25s linear infinite; }
+  .cloud    { animation: cloud 36s   0.30s ease-in-out infinite; }
+  .truck    { animation: truck 4s   0.30s ease-in-out infinite; }
+  .truck:before { animation: wind 4s   0.70s ease-in-out infinite; }
+
+  .awaj:nth-child(2)  { animation: awaj 10s 1s ease-in-out infinite; }
+  .awaj:nth-child(3)  { animation: awaj2 10s 2s ease-in-out infinite; }
+  .awaj:nth-child(4)  { animation: awaj3 10s 3s ease-in-out infinite; }
+  
+  
+  @keyframes tree {
+    0%   { transform: translate(2350px); }
+    50% {}
+    100% { transform: translate(-150px); }
+  }
+  @keyframes tree2 {
+    0%   { transform: translate(2650px); }
+    50% {}
+    100% { transform: translate(-150px); }
+  }
+  @keyframes tree3 {
+    0%   { transform: translate(2850px); }
+    50% {}
+    100% { transform: translate(-150px); }
+  }
+
+
+  @keyframes statue1 {
+    0%   { transform: translate(2500px); }
+    50% {}
+    100% { transform: translate(-2500px); }
+  }
+  @keyframes statue2 {
+    0%   { transform: translate(0px); }
+    50% {}
+    100% { transform: translate(-3500px); }
+  }
+  @keyframes statue3 {
+    0%   { transform: translate(2350px); }
+    50% {}
+    100% { transform: translate(-1500px); }
+  }
+  @keyframes statue4 {
+    0%   { transform: translate(2350px); }
+    50% {}
+    100% { transform: translate(-1500px); }
+  }
+  @keyframes statue5 {
+    0%   { transform: translate(2350px); }
+    50% {}
+    100% { transform: translate(-1500px); }
+  }
+  
+  @keyframes rock {
+    0%   { right: -200px; }
+    100% { right: 2000px; }
+  }
+  @keyframes truck {
+    0%   { }
+    50%   { transform: translateY(50px) }
+    100%   { }
+  }
+  @keyframes cloud {
+    0%    {transform: translateY(-20px)  }
+    25%   {transform: translateX(50px) }
+    50%   {transform: translateX(0px) translateY(20px) }
+    75%   {transform: translateX(-50px) }
+  100%    {transform: translateY(-20px)}
+  }
+  @keyframes wind {
+    0%   {  }
+    50%   { transform: translateY(3px) }
+    100%   { }
+  }
+  @keyframes mtn {
+    100% {transform: translateX(-3500px) rotate(130deg);}
+  }
+  @keyframes hill {
+    /* 0% { transform: translate(3500px); } */
+    100% {transform: translateX(-3500px);}
+  }
+  @keyframes awaj {
+    0%   { transform: translateX(0) translateY(0)scale(0) ; opacity:0;}
+    6%  { transform: translateX(75px) translateY(-50px)scale(1); opacity:1;}
+    10% { transform: translateX(75px) translateY(-50px) scale(1); opacity:1; }
+    50% { transform: translateX(75px) translateY(-300px) scale(1); opacity:0; }
+    75% { transform: translateX(75px) translateY(-500px) scale(0); opacity:0; }
+  }
+  @keyframes awaj2 {
+    0%   { transform: translateX(0) translateY(0)scale(0) ; opacity:0;}
+    6%  { transform: translateX(100px) translateY(-100px)scale(1.2); opacity:1;}
+    10% { transform: translateX(100px) translateY(-100px) scale(1.2); opacity:1; }
+    55% { transform: translateX(100px) translateY(-400px) scale(0); opacity:0; }
+    75% { transform: translateX(100px) translateY(-500px) scale(0); opacity:0; }
+  }
+  @keyframes awaj3 {
+    0%   { transform: translateX(0) translateY(0)scale(0) ; opacity:0;}
+    6%  { transform: translateX(100px) translateY(-150px)scale(1.5); opacity:1;}
+    10% { transform: translateX(100px) translateY(-150px) scale(1.5); opacity:1; }
+    55% { transform: translateX(100px) translateY(-500px) scale(0); opacity:0; }
+    75% { transform: translateX(100px) translateY(-600px) scale(0); opacity:0; }
+  }

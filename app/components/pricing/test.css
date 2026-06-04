@@ -1,0 +1,80 @@
+.price_title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--accent-text);
+  }
+  .price_title2{
+    margin-bottom: 16px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--accent-text);
+  }
+
+  .toggler2{
+    width: 160px;
+    height: 40px;
+    border-width: .5px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    padding: 4px;
+    margin-inline: auto;
+    margin-bottom: 6px;
+    position: relative;
+    cursor: pointer;
+    border-color: var(--card1);
+    background: var(--accent2);
+    box-shadow: inset 8px 8px 8px var(--shadow),
+                inset -2px -2px 2px var(--glow),
+                1px 1px 1px var(--shadow),
+                -2px -2px 2px var(--glow);
+  }
+  .ball1{
+    width: 80px;
+    height: 32px;
+    background: var(--btn-bg-color);
+    border-radius: 16px;
+    padding-left: 4px;
+    position: absolute;
+    border-color: var(--border1);
+    box-shadow: inset 8px 8px 8px var(--shadow),
+                inset -2px -2px 2px var(--glow),
+                1px 1px 1px var(--shadow);
+  }
+  .ball2{
+    width: 80px;
+    height: 32px;
+    background: var(--card1);
+    border-radius: 16px;
+    padding-left: 4px;
+    position: absolute;
+    border-color: var(--border1);
+    box-shadow: inset 8px 8px 8px var(--shadow),
+                inset -2px -2px 2px var(--glow),
+                1px 1px 1px var(--shadow);
+  }
+  .toggler{
+    width: 160px;
+    height: 40px;
+    border-width: .5px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    padding: 4px;
+    margin-inline: auto;
+    margin-bottom: 6px;
+    position: relative;
+    cursor: pointer;
+    border-color: var(--card1);
+    box-shadow: inset 8px 8px 8px var(--shadow),
+                inset -2px -2px 2px var(--glow),
+                1px 1px 1px var(--shadow),
+                -2px -2px 2px var(--glow);
+  }

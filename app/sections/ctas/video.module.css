@@ -1,0 +1,32 @@
+.video{
+    height: 360px;
+    width: 640px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    @apply
+    rounded-2xl
+    bg-accent
+}
+@media only  screen  and (max-width: 768px){
+    .video  {
+        height: 180px;
+        width: 320px;
+    }
+      }
+
+.video iframe{
+    height: 100%;
+    width:100%;
+}
+
+.play{
+    position: absolute;
+    height:100px;
+    width:100px;
+    z-index: 1;
+}
+.play:hover{
+    cursor: pointer;
+}
