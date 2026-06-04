@@ -49,7 +49,7 @@ export function MainNav({ items }: MainNavProps) {
                       <Link
                         aria-label="Build a campaign"
                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[url('/grid.svg')] ring-1 ring-border p-6 no-underline outline-none focus:shadow-md"
-                        href="/pricing/build-campaign">
+                        href="/pricing/build_campaign">
                         <Icons.presentation className="h-6 w-6" aria-hidden="true" />
                         <div className="mb-2 mt-4 text-lg font-medium">
                           Build a Campaign

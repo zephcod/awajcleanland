@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import styles from '@/components/UI/flash_glass.module.css'
+import styles from '@/app/components/ui/flash_glass.module.css'
 
 interface ButtonProps {
     children?: any;
