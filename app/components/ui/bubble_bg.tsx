@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/app/components/UI/bubble_bg.module.css'
+import styles from '@/app/components/ui/bubble_bg.module.css'
 import Image from "next/image";
 import FB from '@/public/social/svg/Facebook_icon.svg'
 import Insta from '@/public/social/svg/Instagramicon.svg'
