@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import Under from "@/public/character/under_construction.png"
-import { Icons } from './UI/icons'
+import { Icons } from './ui/icons'
 import Link from 'next/link'
-import { buttonVariants } from './UI/button'
+import { buttonVariants } from './ui/button'
 
 interface UCProps {
     title:string
