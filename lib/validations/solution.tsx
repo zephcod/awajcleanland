@@ -6,24 +6,25 @@ export const solutionSchema = z.object ({
     description: z.string().optional(),
     category: z.string().optional().default('social_media'),
     price: z.number(),
-    createdat: z.date(),
+    $createdAt: z.date().optional(),
+    $updatedAt: z.date().optional(),
     imageLinks: z.array(z.string())
 })
 
 export type Solution = z.infer<typeof solutionSchema>
 
 export const quickCampaignSchema = z.object ({
-    sid: z.string().optional(),
-    name: z.string(),
-    email: z.string(),
-    phone: z.string(),
-    company: z.string(),
+    $id: z.string().optional(),
+    campaignName: z.string().optional(),
+    email: z.string().optional(),
+    phone: z.string().optional(),
+    company: z.string().optional(),
     description: z.string().optional(),
-    category: z.string().optional().default('social_media'),
-    budget: z.string(),
-    industry: z.string(),
-    location: z.string(),
-    createdat: z.date(),
+    budget: z.string().optional(),
+    industry: z.string().optional(),
+    location: z.string().optional(),
+    $createdAt: z.date().optional(),
+    $updatedAt: z.date().optional()
 })
 
 export type QuickCampaign = z.infer<typeof quickCampaignSchema>

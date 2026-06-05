@@ -9,7 +9,7 @@ export function Toaster() {
       toastOptions={{
         style: {
           background: "rgb(var(--card))",
-          color: "rgb(var(--secondary))",
+          color: "rgb(var(--foreground))",
           border: "1px solid rgb(var(--border))",
         },
       }}

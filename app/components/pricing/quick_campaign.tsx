@@ -24,6 +24,7 @@ import Link from "next/link"
 import { Textarea } from "@/app/components/ui/textarea"
 import Image from "next/image"
 import HolderAstro from "@/public/character/astro-holding.png";
+import { createQuickCampaign } from "@/services/orders.services"
 
 type Inputs = z.infer<typeof quickCampaignSchema>
 
@@ -34,22 +35,33 @@ export function QuickCampaign() {
 
   // react-hook-form
   const form = useForm<Inputs>({
-    resolver: zodResolver(loginSchema),
+    resolver: zodResolver(quickCampaignSchema),
     defaultValues: {
-      name: "",
-      email: "",
-      company: "",
-      description: "",
-      category:"",
-      budget:""
+        $id: "string",
+        campaignName: "",
+        email: "",
+        phone: "",
+        company: "",
+        description:"",
+        budget: "",
+        industry: "",
+        location: "",
+        $createdAt: new Date(),
+        $updatedAt: new Date(),
     },
   })
 
   async function onSubmit(data: Inputs) {
     startTransition(async () => {
       try {
-        
+        console.log("data", JSON.stringify(data))
+        await createQuickCampaign(data)
+        toast.message("Your campaign has been submitted successfully!", {
+          description: "We'll review your campaign and get back to you soon.",
+        })
+        form.reset()
       } catch (err) {
+        console.log("Error creating campaign:", err)
         toast.message("Error occured while logging in", {
           description: `${err}`,
         })
@@ -73,12 +85,12 @@ export function QuickCampaign() {
                         <div className="flex flex-col w-64">
                             <FormField
                             control={form.control}
-                            name="name"
+                            name="campaignName"
                             render={({ field }) => (
                                 <FormItem>
-                                <FormLabel>Name*</FormLabel>
+                                <FormLabel>Campaign Name*</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="your full name..." {...field} />
+                                    <Input placeholder="your campaign name..." {...field} />
                                 </FormControl>
                                 <FormMessage />
                                 </FormItem>
@@ -129,7 +141,7 @@ export function QuickCampaign() {
                         <div className="flex flex-col w-64">
                             <FormField
                             control={form.control}
-                            name="category"
+                            name="company"
                             render={({ field }) => (
                                 <FormItem>
                                 <FormLabel>What can we do for you?</FormLabel>
@@ -246,7 +258,7 @@ export function QuickCampaign() {
                     Book a review
                     <span className="sr-only">Sign in</span>
                     </Button>
-                    <Link href="/pricing/build-campaign">
+                    <Link href="/pricing/build_campaign">
                         <div
                         className={buttonVariants({
                             variant:'outline',

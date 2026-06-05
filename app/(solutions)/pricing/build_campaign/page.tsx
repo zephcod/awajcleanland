@@ -1,17 +1,13 @@
-import UnderConstruction from '@/app/components/under_construction'
-import { Metadata } from 'next'
-import React from 'react'
+import { QuickCampaign } from "@/app/components/pricing/quick_campaign";
+import { getOrders } from "@/services/orders.services";
 
-export const metadata: Metadata = {
-  title: 'Awaj ET Campaign Builder',
-  description: 'Assorted digital marketing and sales campaign builder from Awaj ET, the agency, and related platforms',
-}
-
-
-const Build_Campaign = () => {
+export default async function HomePage() {
   return (
-    <UnderConstruction title={'Build a Campaign'} date={'9:00am GMT 3/12/23'}/>
-  )
+    <main className="p-8">
+      <h1 className="text-3xl font-bold mb-6">
+        Posts
+      </h1>
+     <QuickCampaign/>
+    </main>
+  );
 }
-
-export default Build_Campaign
