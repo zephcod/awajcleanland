@@ -24,11 +24,11 @@ import Link from "next/link"
 import { Textarea } from "@/app/components/ui/textarea"
 import Image from "next/image"
 import HolderAstro from "@/public/character/astro-holding.png";
-import { createQuickCampaign } from "@/services/orders.services"
+import { createQuickCampaign } from "@/services/campaign-service"
 
 type Inputs = z.infer<typeof quickCampaignSchema>
 
-export function QuickCampaign() {
+export function BuildCampaign() {
   const router = useRouter()
   const [isPending, startTransition] = React.useTransition()
 //   const {setAuthStatus} = useAuth()

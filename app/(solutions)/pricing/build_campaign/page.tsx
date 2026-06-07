@@ -1,5 +1,5 @@
-import { QuickCampaign } from "@/app/components/pricing/quick_campaign";
-import { getOrders } from "@/services/orders.services";
+import { BuildCampaign } from "@/app/components/pricing/campaign";
+import { getOrders } from "@/services/orders-services";
 
 export default async function HomePage() {
   return (
@@ -7,7 +7,7 @@ export default async function HomePage() {
       <h1 className="text-3xl font-bold mb-6">
         Posts
       </h1>
-     <QuickCampaign/>
+     <BuildCampaign/>
     </main>
   );
 }

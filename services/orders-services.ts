@@ -18,12 +18,12 @@ export async function getOrders() {
 
 
 
-export async function createQuickCampaign(data: {
+export async function createOrder(data: {
 
 }) {
   return await databases.createDocument({
       databaseId:"650a05f49ac5d9e273b8",
-      collectionId:"6a216b7c001002e072cb",
+      collectionId:"orders-0",
       documentId: ID.unique(),
       data: data
 });

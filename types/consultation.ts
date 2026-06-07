@@ -1,16 +1,15 @@
-export interface Orders {
-  $id: string; 
+export interface Consultation {
+  $id?: string;
   clientName?: string;
   email?: string;
   phone?: string;
   company?: string;
   targetedFrom?: string;
-
+  category?: string;
   description?: string;
   isActive?: boolean;
-  promoCode?: string;
   industry?: string;
-  totalAmount?: number;
+  location?: string;
   $createdAt?: Date;
   $updatedAt?: Date;
-}
+}   

@@ -39,7 +39,7 @@ const CallUs = () => {
                         </div>
                     </Link>
                     <Link 
-                        href="https://t.me/awajet"
+                        href="https://t.me/awajetsupport"
                         rel="noopener noreferrer"
                         target='_blank'
                         className=' font-semibold hover:underline'>

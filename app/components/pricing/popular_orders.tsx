@@ -81,7 +81,7 @@ const PopularOrders = () => {
             img={Training.src}/>
           <ArticleCard
             id={8}
-            title='Website Design'
+            title='Website Integration'
             price='20,000ETB'
             img={Website.src}/>
           <ArticleCard
@@ -101,7 +101,7 @@ const PopularOrders = () => {
             img={Twitter.src}/>
       </section>
         <div className='absolute my-auto bottom-1'>
-          <Link href={'/pricing/build-campaign'} className="relative group mt-20 sm:mt-0 rounded-full flex items-center justify-center mx-auto text-primary-foreground dark:text-secondary-foreground text-lg font-light py-2 px-6 transition-all">
+          <Link href={'/pricing/build_campaign'} className="relative group mt-20 sm:mt-0 rounded-full flex items-center justify-center mx-auto text-primary-foreground dark:text-secondary-foreground text-lg font-light py-2 px-6 transition-all">
             <p>Check more solutions...</p>
           <ExpandingArrow/>
           </Link>

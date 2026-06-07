@@ -22,12 +22,12 @@ const CasesSection = () => {
             </div>
             <div className='p-2 max-w-xs'>
             <Image src={Content} width={400} height={300} alt='Awaj ET Case Studies Icon'/>
-                <Link href="https://www.youtube.com/@AwajAIcom" target='_blank' className='text-primary font-semibold hover:underline'>
+                {/* <Link href="https://www.youtube.com/@AwajAIcom" target='_blank' className='text-primary font-semibold hover:underline'>
                     <div className='flex flex-row items-center justify-center gap-1'>
                         <p>See Testimonials</p>
                         <Icons.arrowUpRight className='h-4 w-4'/>
                     </div>
-                </Link>
+                </Link> */}
             </div>
         </div>
     </div>

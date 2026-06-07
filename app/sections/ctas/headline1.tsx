@@ -52,10 +52,10 @@ const Headline1 = () => {
             <div className="relative flex flex-col p-4 gap-3 max-w-4xl mx-auto flex-1 text-center">
               <div className='ring-1 ring-accent bg-card opacity-70 rounded-md shadow-md p-4 items-center flex flex-col '>
                 <h3 className="p-1 font-semibold text-lg">
-                  7.2X <br/> Average ROAS 
+                  9.2X <br/> Average ROAS 
                 </h3>
                 <p className="py-2 border-t-2 border-dashed text-md font-light">
-                 An average of 7-folds &apos;return on ad spent&apos; across all our campaigns.
+                 An average of 9-folds &apos;return on ad spent&apos; across all our campaigns.
                 </p>
               </div>
               <div className='ring-1 ring-accent bg-card opacity-70 rounded-md shadow-md p-4 items-center flex flex-col'>

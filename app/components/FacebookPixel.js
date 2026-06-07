@@ -23,7 +23,6 @@ const FacebookPixel = () => {
         strategy="afterInteractive"
         onLoad={() => setLoaded(true)}
         data-pixel-id={pixel.FB_PIXEL_ID}
-        // data-pixel-id="3523515121131129"
       />
     </div>
   );

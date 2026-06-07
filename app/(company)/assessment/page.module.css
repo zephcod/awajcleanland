@@ -1,0 +1,125 @@
+.maincontainer {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 12px;
+  align-items: center;
+  animation: fadeIn .5s;
+}
+.container {
+  position: relative;
+  max-width: 784px;
+  margin: auto;
+  padding-bottom: 100px;
+  padding-top: 75px;
+}
+.imgContainer {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+.img {
+  object-fit: cover;
+  /* filter: grayscale(100%); */
+}
+
+.imgText {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  bottom: -48px;
+  right: 100px;
+  left: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: saturate(130%) blur(5px) !important;
+  background-color: var(--transparent-glass) !important;
+  box-shadow: inset -2px -2px 22px var(--glow),
+                2px 2px 6px var(--shadow);
+}
+@media only  screen  and (max-width: 768px){
+  .imgText {
+  right: 10px;
+  left: 10px;
+  }
+}
+
+.title {
+  font-size: 60px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.content {
+  @apply
+  relative
+  flex
+  flex-col
+  md:flex-row
+  p-6
+  gap-12
+  items-center
+}
+
+.imageContainer {
+  /* flex: 1; */
+  height: 500px;
+  width: 300px;
+  position: relative;
+}
+
+.image {
+  object-fit: contain;
+  animation: move 8s infinite ease-in-out alternate;
+}
+
+@keyframes move {
+  0%   { transform: rotate(-3deg) }
+  26%   { transform: rotate(3deg) }
+  74%   { transform: rotate(-3deg) }
+  100%   { transform: rotate(3deg) }
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid var(--border1);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: saturate(130%) blur(5px) !important;
+  background-color: var(--transparent-glass) !important;
+  box-shadow: inset -2px -2px 22px var(--glow),
+                2px 2px 6px var(--shadow);
+}
+
+.input,
+.textArea {
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: var(--accent1);
+  border: 1px solid var(--border1);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  backdrop-filter: saturate(130%) blur(5px) !important;
+  background-color: var(--transparent-glass) !important;
+  box-shadow: inset -2px -2px 22px var(--glow),
+                2px 2px 6px var(--shadow);
+}
+.input:hover{
+  box-shadow: 2px 2px 15px var(--btn-shadow2),
+              -1px -1px 10px var(--btn-glow2);}
+@keyframes fadeIn {
+  from   { transform: rotate(-.2deg); opacity: 0;}
+  
+  to { transform: rotate(0deg); opacity: 1;}
+}

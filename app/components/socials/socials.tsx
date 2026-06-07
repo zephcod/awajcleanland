@@ -63,7 +63,7 @@ const social_item = [
 
 function SocialList({}: {  }) {
     return (
-      <div className="flex flex-row mx-auto w-full items-center px-0 md:px-12">
+      <div className="flex flex-row mx-auto w-full items-center px-1 md:px-4 lg:px-8 gap-1 lg:gap-2">
       {social_item.map(card=>(
         <div className={styles.social} key={card.id} >
         <Link href={card.url} target='_blank'>

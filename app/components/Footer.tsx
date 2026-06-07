@@ -191,36 +191,34 @@ export default function Footer() {
             </div>
             <div className='text-sm font-light pb-2'>
             <p>
-              Subscribe to our Newsletter / Socials
+              ሰላም ቤተሰብ 👋 Join our online community
             </p>
             </div>
           </div>
           <Socials/>
         </div>
         <div className={styles.listcontainer}>
-        <ul className="flex justify-evenly ">
-          <li className="space-y-5 row-span-2">
-            <h2 className="text-lg tracking-wide">Company</h2>
-            <ul className="space-y-4 text-md">
-              <FooterList1/>
-            </ul>
-          </li>
-          <li className="space-y-5 row-span-2">
-            <h2 className="text-lg tracking-wide">Resources</h2>
-            <ul className="space-y-4">
-              <FooterList2/>
-            </ul>
-          </li>
-          <li className="space-y-5 row-span-2">
-            <h2 className="text-lg tracking-wide">Support</h2>
-            <ul className="space-y-4">
-              <FooterList3/>
-            </ul>
-          </li>
-        </ul>
-       <div>
-      </div>
-      </div>
+          <ul className="flex justify-between w-full flex-wrap gap-4">
+            <li className="space-y-5 row-span-2">
+              <h2 className="text-lg tracking-wide">Company</h2>
+              <ul className="space-y-4 text-md">
+                <FooterList1/>
+              </ul>
+            </li>
+            <li className="space-y-5 row-span-2">
+              <h2 className="text-lg tracking-wide">Resources</h2>
+              <ul className="space-y-4">
+                <FooterList2/>
+              </ul>
+            </li>
+            <li className="space-y-5 row-span-2">
+              <h2 className="text-lg tracking-wide">Support</h2>
+              <ul className="space-y-4">
+                <FooterList3/>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

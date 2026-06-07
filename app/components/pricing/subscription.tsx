@@ -139,7 +139,7 @@ export default function Subscriptions(){
                   <BsCheck/><p>Brand tone development</p>
                 </div>
                 <div className='px-2 flex flex-row items-center gap-2'>
-                  <BsCheck/><p>Creative and influencer collab</p>
+                  <BsCheck/><p>Partnership arbitration</p>
                 </div>
                 <div className='px-2 flex flex-row items-center gap-2'>
                   <BsCheck/><p>Premium support</p>

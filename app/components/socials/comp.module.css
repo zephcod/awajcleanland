@@ -9,10 +9,11 @@
   }
 
 .social {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 20px;
     flex: 1;
   }
 
@@ -20,3 +21,12 @@
     opacity: 0.6;
     cursor: pointer;
   }
+
+  @media only  screen  and (max-width: 768px){
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+}

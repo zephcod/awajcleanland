@@ -22,7 +22,7 @@
     --border: 193, 201, 201;
     --input: 240 5.9% 90%;
   
-    --primary: 49, 79%, 55%;
+    --primary: 35, 80%, 50%;
     --primary-foreground: 240 5.9% 10%;
   
     --secondary: 240 4.8% 95.9%;
@@ -47,7 +47,7 @@
     --backdrop: rgba(211, 216, 218, 0.6);
     --border1: rgb(211, 216, 218);
     --accent1: #948f7a;
-    --accent2: rgb(231, 198, 51);
+    --accent2: rgb(250, 180, 40);
     --card1: rgb(56, 59, 59,.8);
     --dropdown: rgb(56, 59, 59);
     --btn-bg: linear-gradient(145deg, #171717, #444245);
@@ -170,7 +170,7 @@ body {
  --card1: rgb(244, 251, 255);
  --dropdown: rgb(228, 238, 245,.98);
  --accent1: #948f7a;
- --accent2: #e7c633;
+ --accent2: rgb(250, 170, 40);
  --accent-text: hsl(0, 0%, 15%);
  
  --btn-bg: linear-gradient(145deg, #d0dee0, #eef9fa);

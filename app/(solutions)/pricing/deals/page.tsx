@@ -6,7 +6,7 @@ import Content from "@/public/character/1971.png"
 import Avatar from "@/public/profile/avatar2.png"
 import Link from 'next/link'
 import { buttonVariants } from '@/app/components/ui/button'
-import { QuickCampaign } from '@/app/components/pricing/quick_campaign'
+import { BuildCampaign } from '@/app/components/pricing/campaign'
 import ThirdParty from '@/app/sections/third_party'
 import ScrollLink from '@/app/components/ui/scroll_link'
 import type { Metadata } from 'next'
@@ -124,7 +124,7 @@ const Deals = () => {
         </div>
       </div>
       <section id='quick'>
-      <QuickCampaign/>
+      <BuildCampaign/>
       </section>
     </div>
   )
