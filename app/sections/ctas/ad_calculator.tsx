@@ -1,5 +1,5 @@
 "use client";
-
+import * as React from "react"
 import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "@/app/components/ui/button";
@@ -10,11 +10,12 @@ import { Separator } from "@/app/components/ui/separator";
 import Link from "next/link"
 import { buttonVariants } from "@/app/components/ui/button"
 import { Icons } from '@/app/components/ui/icons';
+import { Slider } from "@/app/components/ui/slider";
 
 export default function AdCalculator() {
-  const [impressions, setImpressions] = useState(21000);
+  const [impressions, setImpressions] = React.useState<number>(21000);
 //   const [conversionRate, setConversionRate] = useState(5);
-  const [adPeriod, setAdPeriod] = useState(5);
+  const [adPeriod, setAdPeriod] = React.useState<number>(5);
 
 const platformRates = {
   meta: 1,
@@ -69,28 +70,48 @@ const [costPerLead, setCostPerLead] = useState(
                   </Dialog.Close>
                 </div>
                 <div className="space-y-4">
-                  <div>
-                    <label className="text-sm font-medium">
-                      Daily Impression | የዕለት እይታ ብዛት
-                    </label>
-                    <Input
-                      type="number"
-                      value={impressions}
-                      onChange={(e) =>
-                        setImpressions(Number(e.target.value))
-                      }
+                  <div className="space-y-2">
+                    <div className="w-full flex flex-row justify-between">
+                        <label className="text-sm font-medium">
+                        Daily Impression | የዕለት እይታ ብዛት
+                        </label>
+                        <span className="text-lg font-bold">{impressions.toLocaleString()} እይታ</span>
+                    </div>
+                    <Slider
+                      variant="default"
+                      aria-label="Daily impression slider"
+                      thickness="thin"
+                      name="456"
+                      defaultValue={[21000]}
+                      min={21000}
+                      max={1000000}
+                      step={1000}
+                      value={[impressions]}
+                      onValueChange={(value: number[]) => {
+                        setImpressions(value[0]);
+                      }}
                     />
                   </div>
-                  <div>
-                    <label className="text-sm font-medium">
-                      Advertisment Period | የማስታወቂያ ቆይታ (ቀን)
-                    </label>
-                    <Input
-                      type="number"
-                      value={adPeriod}
-                      onChange={(e) =>
-                        setAdPeriod(Number(e.target.value))
-                      }
+                  <div className="space-y-1">
+                    <div className="w-full flex flex-row justify-between">
+                        <label className="text-sm font-medium">
+                        Advertisment Period | የማስታወቂያ ቆይታ
+                        </label>
+                        <span className="text-lg font-bold">{adPeriod} ቀን</span>
+                    </div>
+                    <Slider
+                      variant="default"
+                      aria-label="Ad period slider"
+                      thickness="thin"
+                      name="456"
+                      defaultValue={[5]}
+                      min={4}
+                      max={90}
+                      step={1}
+                      value={[adPeriod]}
+                      onValueChange={(value: number[]) => {
+                        setAdPeriod(value[0]);
+                      }}
                     />
                   </div>
                   <div>
@@ -127,12 +148,12 @@ const [costPerLead, setCostPerLead] = useState(
                   </div>
                   <div className="rounded-xl bg-accent p-4">
                     <h3 className="font-semibold mb-2 ">
-                      Approx. Results | የተገመተው ውጤት
+                      Approx. Results | ግምት ውጤት
                     </h3>
                     <Separator/>
                     <div className="space-y-1 mt-2">
                       <div className="flex justify-between">
-                        <span>Interaction | ግንኙነት</span>
+                        <span>Engagement | ግንኙነት</span>
                         <span className="font-semibold">
                           {interaction.toFixed(0)}
                         </span>
