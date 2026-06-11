@@ -182,7 +182,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className='text-sm text-center font-light py-2 '>
-              ©2026 Ace Digital Advert PLC. All rights reserved.
+              ©2026 Ace Digital. All rights reserved.
             </p>
           </div>
           <div className='flex flex-col justify-between items-center gap-2'>
@@ -198,21 +198,21 @@ export default function Footer() {
           <Socials/>
         </div>
         <div className={styles.listcontainer}>
-          <ul className="flex justify-between w-full flex-wrap gap-4">
-            <li className="space-y-5 row-span-2">
-              <h2 className="text-lg tracking-wide">Company</h2>
+          <ul className="flex justify-between w-full flex-wrap gap-2">
+            <li className="space-y-1 row-span-2">
+              <h2 className="text-lg tracking-wide text-center">Company</h2>
               <ul className="space-y-4 text-md">
                 <FooterList1/>
               </ul>
             </li>
-            <li className="space-y-5 row-span-2">
-              <h2 className="text-lg tracking-wide">Resources</h2>
+            <li className="space-y-1 row-span-2">
+              <h2 className="text-lg tracking-wide text-center">Resources</h2>
               <ul className="space-y-4">
                 <FooterList2/>
               </ul>
             </li>
-            <li className="space-y-5 row-span-2">
-              <h2 className="text-lg tracking-wide">Support</h2>
+            <li className="space-y-1 row-span-2">
+              <h2 className="text-lg tracking-wide text-center">Support</h2>
               <ul className="space-y-4">
                 <FooterList3/>
               </ul>

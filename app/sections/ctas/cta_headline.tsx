@@ -7,6 +7,7 @@ import Content from "@/public/awajai_cloud-min.webp"
 import Link from 'next/link'
 import { buttonVariants } from '@/app/components/ui/button'
 import ScrollLink from '@/app/components/ui/scroll_link'
+import AdCalculator from './ad_calculator'
 
 const CtaHeadline = () => {
   return (
@@ -18,9 +19,10 @@ const CtaHeadline = () => {
           <div className="max-w-5xl mx-auto text-center flex flex-col w-full items-center">
             <Image className='cloud' src={Content} width={400} height={400} alt='Awaj ET Digital Billboard'/>
             <br />
-            <ScrollLink href={'#quick'}>Ad Sample</ScrollLink>
+            {/* <ScrollLink href={'#quick'}>Ad Sample</ScrollLink> */}
+            <AdCalculator/>
             <p className='mt-2 text-base font-light text-muted-foreground'>
-              Check your pre-campaign performance here.
+              Check your cost and results here.
             </p>
           </div>
     </div>

@@ -17,6 +17,9 @@ import { Button } from "../../components/ui/button"
 import { ScrollArea } from "../../components/ui/scroll_area"
 import { Sheet, SheetContent, SheetTrigger } from "../../components/ui/sheet"
 import { Icons } from "../../components/ui/icons"
+import * as Dialog from "@radix-ui/react-dialog";
+import Image from "next/image";
+import Content from "@/public/logo/awaj_ai_logo.svg"
 
 interface MobileNavProps {
   mainNavItems?: MainNavItem[]
@@ -38,18 +41,21 @@ export function MobileNav({ mainNavItems, sidebarNavItems }: MobileNavProps) {
           <span className="sr-only">Toggle Menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="pl-1 pr-0 bg-card border-border">
-        <div className="px-7">
+      <SheetContent aria-describedby={undefined} side="left" className="pl-1 pr-0 bg-card border-border">
+        <Dialog.Title >
+        <div className="px-7 items-center text-center">
           <Link
             aria-label="Home"
             href="/"
             className="flex items-center"
             onClick={() => setIsOpen(false)}
           >
-            <Icons.awajlogo aria-hidden="true" />
-            <span className="font-bold ml-2">{siteConfig.name}</span>
+            <Image src={Content} width={25} height={25} 
+            alt="AwajET Logo"/>
+            <span className="font-bold ml-2 pb-1">{siteConfig.name}</span>
           </Link>
         </div>
+        </Dialog.Title>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
           <div className="pl-1 pr-7">
             <Accordion type="single" collapsible className="w-full ">

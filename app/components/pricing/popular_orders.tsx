@@ -15,13 +15,13 @@ import Link from 'next/link';
 import ExpandingArrow from '@/app/components/expanding_arrow';
 
 interface ArticleCardrProps {
-  id: number; title:string; price:string; img:string;
+  id: number; title:string; price:string; desc:string; img:string;
 }
 function ArticleCard (props:ArticleCardrProps) {
   return (
     <article className={styles.card}>
     <header className={styles.card_header}>
-      <p>17 Orders this week</p>
+      <p>{props.desc}</p>
       <h2>{props.title}</h2>
     </header>
     <div className={styles.imgContainer}>
@@ -53,51 +53,61 @@ const PopularOrders = () => {
             id={1}
             title='Meta Boost'
             price='5,000ETB'
+            desc='Facebook & Instagram ads that convert.'
             img={Meta.src}/>
           <ArticleCard
             id={2}
             title='Google Ads'
             price='5,000ETB'
+            desc='Google Ads that drive quality leads.'
             img={Google.src}/>
           <ArticleCard
             id={4}
             title='Ad Promo Video'
             price='4,500ETB'
+            desc='Short videos built for ad performance.'
             img={PromoVideo.src}/>
           <ArticleCard
             id={6}
             title='Photography'
             price='2,500ETB'
+            desc='Scroll stopping professional photography.'
             img={PhotoCamera.src}/>
           <ArticleCard
             id={5}
             title='Branding Refresh'
             price='4,000ETB'
+            desc='Modernize your brand identity with'
             img={Branding.src}/>
           <ArticleCard
             id={7}
             title='In person Training'
             price='8,500ETB'
+            desc='Personalized training sessions for clients.'
             img={Training.src}/>
           <ArticleCard
             id={8}
             title='Website Integration'
             price='20,000ETB'
+            desc='Connect your website and tracking tools.'
             img={Website.src}/>
           <ArticleCard
             id={3}
-            title='Social Media Management'
+            title='Social Media Admin'
             price='7,500ETB'
+            desc='Tailored content, growth, and engagement.'
             img={LinkedIn.src}/>
           <ArticleCard
             id={9}
-            title='New Social Setup'
+            title='New Account Setup'
             price='25,000ETB'
+            desc='Launch and grow new accounts professionally.'
             img={Telegram.src}/>
           <ArticleCard
             id={10}
-            title='Influencer Collab'
+            title='Influencer Arbitrage'
             price='40,000ETB'
+            desc='Collaborate with influencers to promote your brand.'
             img={Twitter.src}/>
       </section>
         <div className='absolute my-auto bottom-1'>

@@ -24,8 +24,11 @@ const ScrollLink = ({ children, ...props }: ScrollLinkProps) => {
   };
   return (
     <Link scroll={false} {...props} onClick={handleScroll}>
-        <div className='text-gray-800 bg-primary hover:bg-amber-400 flex flex-row items-center justify-center gap-1 ring-1 ring-border rounded-md px-4 py-2'>
-            <p className='text-sm'>{children}</p>
+        <div className={buttonVariants({
+                    variant:'outline',
+                    size: "default",
+                  })}>
+            <p className='text-sm '>{children}</p>
             <Icons.arrowDown className='h-4 w-4'/>
         </div>
     </Link>

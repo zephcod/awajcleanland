@@ -39,9 +39,9 @@ const Headline1 = () => {
                   <ScrollLink href={'#deals'}>
                   Check package deals
                   </ScrollLink>
-                  <ScrollLink href={'#case_sec'}>
+                  {/* <ScrollLink href={'#case_sec'}>
                   Check case studies
-                  </ScrollLink>
+                  </ScrollLink> */}
                 </div>
               </div>
           </div>

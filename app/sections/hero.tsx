@@ -9,16 +9,13 @@ import ColorButton from '@/app/components/button/color_btn';
 import Content from "@/public/awajai_cloud-min.webp"
 import ScrollLink from '@/app/components/ui/scroll_link'
 import { Icons } from '@/app/components/ui/icons'
+import AdCalculator from './ctas/ad_calculator'
 
 const Hero = () => {
   return (
         <div className="loop-wrapper">
             <div className={styles.container}>
                 <div className={styles.glass}>
-                    {/* <div className={styles.header}>
-                    <Image src={Awaj} width={200} height={200}  alt='Social Media Awaj Ad'/>
-                    </div>
-                    <br/> */}
                     <div className={styles.subtitle}>
                         <h2>
                         🏆 Win the digital race!
@@ -50,7 +47,7 @@ const Hero = () => {
                     <Image className='cloud' src={Content} width={400} height={400} alt='Awaj ET Digital Billboard'/>
                     <div className='flex flex-row mt-2 gap-4 justify-center items-center'>
                         <ScrollLink href={'#deals'}>Packages</ScrollLink>
-                        <ScrollLink href={'#quick'}>Ad Sample</ScrollLink>
+                        <AdCalculator/>
                     </div>
                 </div>
                 <div className='hidden md:flex'><CtaHeadline/></div>

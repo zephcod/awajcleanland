@@ -6,8 +6,7 @@ import Content from "@/public/casestudy/hand_call_us.png"
 const CallUs = () => {
   return (
     <div className='flex flex-col items-center '>
-        <div className='h-10'></div>
-        <div className='text-muted-foreground items-center text-center flex flex-col-reverse md:flex-row mx-auto max-w-4xl py-4'>
+        <div className='text-muted-foreground items-center text-center flex flex-col-reverse md:flex-row mx-auto max-w-4xl py-1 sm:py-1'>
             <div className='md:px-8 sm:px-4'>
                 <Link href="tel:0903569999" className='flex flex-row text-muted-foreground items-center cursor-pointer justify-center text-center gap-2 w-full m-auto'>
                     <Icons.phone className='h-8 w-8 '/>

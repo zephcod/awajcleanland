@@ -86,7 +86,7 @@ object-fit: contain;
 }
 
 .card_header h2:hover {
-    background: var(--btn-bg-color);
+    background: var(--accent-text);
     text-shadow: none;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

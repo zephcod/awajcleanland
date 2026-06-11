@@ -13,7 +13,7 @@ export default function Subscriptions(){
     const [selectMonthly,setSelectMonthly ] = React.useState<Boolean>(true);
     const [priceFix, setPriceFix] = React.useState<[number]>([50000])
     const priceFormat = Number(priceFix)
-    const customerSize = (priceFormat*0.2)
+    const customerSize = (priceFormat*0.02)
     interface PriceWrapperProps {
       id: number; title:string; price:number; feature1:string; feature2:string; feature3:string; feature4:string; feature5:string; feature6:string; feature7:string; feature8:string;
     }
