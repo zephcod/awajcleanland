@@ -39,7 +39,17 @@ export function formatPrice(
     notation: 'compact',
   }).format(Number(price))
 }
-
+export function formatNumbers(
+  price: number | string,
+  currency: "USD" | "EUR" | "GBP" | "ETB" | "BDT" = "USD",
+  notation: "compact" | "engineering" | "scientific" | "standard" = "standard"
+) {
+  return new Intl.NumberFormat('am-ET', {
+    // style: "currency",
+    // currency: 'ETB',
+    notation: 'compact',
+  }).format(Number(price))
+}
 //
 
 export function formatDate(date: Date | string) {

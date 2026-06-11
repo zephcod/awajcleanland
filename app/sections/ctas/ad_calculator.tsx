@@ -3,14 +3,13 @@ import * as React from "react"
 import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "@/app/components/ui/button";
-import { Input } from "@/app/components/ui/input";
 import { Calculator, X } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/app/components/ui/select";
 import { Separator } from "@/app/components/ui/separator";
 import Link from "next/link"
-import { buttonVariants } from "@/app/components/ui/button"
 import { Icons } from '@/app/components/ui/icons';
 import { Slider } from "@/app/components/ui/slider";
+import { formatNumbers} from "@/app/utils/utils";
 
 export default function AdCalculator() {
   const [impressions, setImpressions] = React.useState<number>(21000);
@@ -58,8 +57,8 @@ const [costPerLead, setCostPerLead] = useState(
             <Dialog.Portal>
               <Dialog.Overlay className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50" />
               <Dialog.Content aria-describedby={undefined}
-              className="fixed bg-card border left-1/2 top-1/2 w-[95vw] max-w-xl -translate-x-1/2 -translate-y-1/2 rounded-2xl p-8 shadow-xl z-50">
-                <div className="flex items-center justify-between mb-6">
+              className="fixed bg-card border left-1/2 top-1/2 w-[95vw] max-w-xl -translate-x-1/2 -translate-y-1/2 rounded-2xl p-6 md:p-8 shadow-xl z-50">
+                <div className="flex items-center justify-between mb-4">
                   <Dialog.Title className="text-2xl font-bold">
                     Awaj Calculator
                   </Dialog.Title>
@@ -73,9 +72,9 @@ const [costPerLead, setCostPerLead] = useState(
                   <div className="space-y-2">
                     <div className="w-full flex flex-row justify-between">
                         <label className="text-sm font-medium">
-                        Daily Impression | የዕለት እይታ ብዛት
+                        Daily Impression | የዕለት እይታ
                         </label>
-                        <span className="text-lg font-bold">{impressions.toLocaleString()} እይታ</span>
+                        <span className="text-lg font-bold">{formatNumbers(impressions)} እይታ</span>
                     </div>
                     <Slider
                       variant="default"
@@ -95,7 +94,7 @@ const [costPerLead, setCostPerLead] = useState(
                   <div className="space-y-1">
                     <div className="w-full flex flex-row justify-between">
                         <label className="text-sm font-medium">
-                        Advertisment Period | የማስታወቂያ ቆይታ
+                        Ad Period | የማስታወቂያ ቆይታ
                         </label>
                         <span className="text-lg font-bold">{adPeriod} ቀን</span>
                     </div>
