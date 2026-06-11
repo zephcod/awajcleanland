@@ -10,6 +10,8 @@ import Link from "next/link"
 import { Icons } from '@/app/components/ui/icons';
 import { Slider } from "@/app/components/ui/slider";
 import { formatNumbers} from "@/app/utils/utils";
+import Image from "next/image";
+import Content from "@/public/logo/awaj_ai_logo.svg"
 
 export default function AdCalculator() {
   const [impressions, setImpressions] = React.useState<number>(21000);
@@ -59,14 +61,18 @@ const [costPerLead, setCostPerLead] = useState(
               <Dialog.Content aria-describedby={undefined}
               className="fixed bg-card border left-1/2 top-1/2 w-[95vw] max-w-xl -translate-x-1/2 -translate-y-1/2 rounded-2xl p-6 md:p-8 shadow-xl z-50">
                 <div className="flex items-center justify-between mb-4">
-                  <Dialog.Title className="text-2xl font-bold">
-                    Awaj Calculator
-                  </Dialog.Title>
-                  <Dialog.Close asChild>
-                    <button className="rounded-md p-2 hover:bg-muted">
-                      <X className="h-4 w-4" />
-                    </button>
-                  </Dialog.Close>
+                    <div className="h-full flex flex-row items-bottom space-x-2">
+                        <Image  src={Content} width={25}  
+                                alt="AwajET Logo"/>
+                        <Dialog.Title className="text-2xl font-bold pb-1">
+                        Awaj Calculator
+                        </Dialog.Title>
+                    </div>
+                    <Dialog.Close asChild>
+                        <button className="rounded-md p-2 hover:bg-muted">
+                        <X className="h-4 w-4" />
+                        </button>
+                    </Dialog.Close>
                 </div>
                 <div className="space-y-4">
                   <div className="space-y-2">
@@ -167,18 +173,18 @@ const [costPerLead, setCostPerLead] = useState(
                       <div className="flex justify-between">
                         <span>Cost | ጠቅላላ ወጪ</span>
                         <span className="font-semibold text-lg">
-                          ETB {Math.round(estimatedSpend).toLocaleString()}
+                          {Math.round(estimatedSpend).toLocaleString()} ብር
                         </span>
                       </div>
                       <div className="flex justify-between">
                         <em className='text-sm text-muted-foreground text-center max-w-3xl m-auto'>
-                            No hidden cost. All prices include 15% VAT.
+                            No hidden cost - VAT & overhead included
                         </em>
                       </div>
                     </div>
                   </div>
-                  <div className="ring-1 ring-border rounded-md p-2">
-                    <h3 className="font-semibold my-1 ">
+                  <div className="ring-1 ring-border rounded-md p-2 md:p-4">
+                    <h3 className="font-semibold my-1  ">
                       Disclaimer | ማሳሰቢያ
                     </h3>
                     <span className="text-sm text-muted-foreground text-center max-w-3xl m-auto">
